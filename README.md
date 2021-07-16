@@ -58,7 +58,7 @@ python test.py
 ```
 
 
-We provide two trained models on Tusimple and our style lane dataset, downloading our best performed model, which will available soon. (Tusimple: [GoogleDrive],
+We provide two trained models on Tusimple and our style lane dataset, downloading our trained model. (Tusimple: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM),
 style lane: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM)
 )
 
