@@ -2,14 +2,15 @@
 
 PyTorch implementation of the paper "[Enhancing Robustness of Lane Detection through Dynamic Smoothness]".
 
-Our paper has been accepted by ICAUS2021.
 
 ## Introduction
 ![network](network.PNG "network")
-- RESA shifts sliced
-feature map recurrently in vertical and horizontal directions
-and enables each pixel to gather global information.
-- RESA achieves SOTA results on CULane and Tusimple Dataset.
+When the lane of the current frame needs to be
+detected, it is only necessary to extract the feature map of the current frame through the Encoder network
+in the present moment. Then, it is used together with the features of the previously t−1 frames historically
+saved through the Encoder network as the input of ConvGRU model for feature fusion. The Encoder-Decoder
+network branch is applied to extract feature map, and the ConvGRU branch is used to learn the semantic
+relationship of t historical frames and fuse the feature information of these frames.
 
 ## Get started
 1. Clone the RESA repository
@@ -35,12 +36,12 @@ and enables each pixel to gather global information.
 
 4. Data preparation
 
-    Download [Tusimple](https://github.com/TuSimple/tusimple-benchmark/issues/3). Then extract them to  `$TUSIMPLEROOT`. Create link to `data` directory.
+    Download [Tusimple](https://github.com/TuSimple/tusimple-benchmark/issues/3) and our [style lane dataset](). Then extract them to  `$DATASET`. Create link to `data` directory.
     
     ```Shell
-    cd $RESA_ROOT
+    cd $ConvGRULane_ROOT
     mkdir -p data
-    ln -s $TUSIMPLEROOT data/tusimple
+    ln -s $DATASET data/
     ```
 ## Training
 
@@ -57,9 +58,8 @@ python test.py
 ```
 
 
-
-We provide two trained models on Tusimple and our style lane dataset, downloading our best performed model. (Tusimple: [GoogleDrive](https://drive.google.com/file/d/1M1xi82y0RoWUwYYG9LmZHXWSD2D60o0D/view?usp=sharing)/[BaiduDrive(code:s5ii)](https://pan.baidu.com/s/1CgJFrt9OHe-RUNooPpHRGA),
-style lane: [GoogleDrive](https://drive.google.com/file/d/1pcqq9lpJ4ixJgFVFndlPe42VgVsjgn0Q/view?usp=sharing)/[BaiduDrive(code:rlwj)](https://pan.baidu.com/s/1ODKAZxpKrZIPXyaNnxcV3g)
+We provide two trained models on Tusimple and our style lane dataset, downloading our best performed model, which will available soon. (Tusimple: [GoogleDrive],
+style lane: [GoogleDrive]
 )
 
 ## Citation
