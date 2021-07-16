@@ -57,11 +57,25 @@ For testing, run
 ```Shell
 python test.py 
 ```
-## V
-
-We provide two trained models on Tusimple and our style lane dataset, downloading our trained model. (Tusimple: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM),
+We provide two trained models on Tusimple and our style lane dataset, you can download our trained model. (Tusimple: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM),
 style lane: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM)
 ). More details can be seen in our paper.
+
+## Compare
+![compare1](resluts/compare1.png "network")
+The first and third columns are visualization results based on single
+frame detection method (UNet), and the second and fourth columns are visualization results of our method.
+The second and fourth rows are the output grayscale images.
+
+![compare2](resluts/compare2.png "network")
+The two columns on the left are
+the visualization results of Tusimple dataset, and other columns are the visualization results of Rural Road
+dataset.
+
+![compare3](resluts/compare3.png "network")
+The top two rows are based on the method of Unet_ConvLSTM, and the
+last two rows are applied our method. The second and fourth rows are the output grayscale images.
+
 
 ## Citation
 Please cite our paper if you use this code or data in your own work:
