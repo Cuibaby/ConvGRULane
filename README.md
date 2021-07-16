@@ -62,17 +62,17 @@ style lane: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFv
 ). More details can be seen in our paper.
 
 ## Compare
-![compare1](resluts/compare1.png "compare1")
+<img src="ConvGRULane/results/compare1.png">
 The first and third columns are visualization results based on single
 frame detection method (UNet), and the second and fourth columns are visualization results of our method.
 The second and fourth rows are the output grayscale images.
 
-![compare2](resluts/compare2.png "compare2")
+<img src="ConvGRULane/results/compare2.png">
 The two columns on the left are
 the visualization results of Tusimple dataset, and other columns are the visualization results of Rural Road
 dataset.
 
-![compare3](resluts/compare3.png "compare3")
+<img src="ConvGRULane/results/compare3.png">
 The top two rows are based on the method of Unet_ConvLSTM, and the
 last two rows are applied our method. The second and fourth rows are the output grayscale images.
 
