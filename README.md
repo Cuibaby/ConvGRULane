@@ -59,7 +59,7 @@ python test.py
 
 
 We provide two trained models on Tusimple and our style lane dataset, downloading our best performed model, which will available soon. (Tusimple: [GoogleDrive],
-style lane: [GoogleDrive]
+style lane: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM)
 )
 
 ## Citation
