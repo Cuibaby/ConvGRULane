@@ -5,6 +5,7 @@ PyTorch implementation of the paper "[Enhancing Robustness of Lane Detection thr
 
 ## Introduction
 ![network](network.PNG "network")
+
 When the lane of the current frame needs to be
 detected, it is only necessary to extract the feature map of the current frame through the Encoder network
 in the present moment. Then, it is used together with the features of the previously t−1 frames historically
@@ -36,7 +37,7 @@ relationship of t historical frames and fuse the feature information of these fr
 
 4. Data preparation
 
-    Download [Tusimple](https://github.com/TuSimple/tusimple-benchmark/issues/3) and our [style lane dataset](). Then extract them to  `$DATASET`. Create link to `data` directory.
+    Download [Tusimple](https://github.com/TuSimple/tusimple-benchmark/issues/3) and our [style lane dataset](https://drive.google.com/drive/folders/1cKwcCPHVDeOyN1Zbt57qzWkQ6yZUPIgo). Then extract them to  `$DATASET`. Create link to `data` directory.
     
     ```Shell
     cd $ConvGRULane_ROOT
@@ -56,13 +57,14 @@ For testing, run
 ```Shell
 python test.py 
 ```
-
+## V
 
 We provide two trained models on Tusimple and our style lane dataset, downloading our trained model. (Tusimple: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM),
 style lane: [GoogleDrive](https://drive.google.com/drive/folders/1FNKCscZusiRSFvXlCFTEZOp9YnlQbrXM)
-)
+). More details can be seen in our paper.
 
 ## Citation
+Please cite our paper if you use this code or data in your own work:
 
 ```BibTeX
 ```
