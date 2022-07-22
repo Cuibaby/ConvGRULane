@@ -84,11 +84,7 @@ Please cite our paper if you use this code or data in your own work:
 @InProceedings{10.1007/978-981-16-9492-9_16,
     author="Qiu, Zengyu
     and Zhao, Jing
-    and Sun, Shiliang",
-    editor="Wu, Meiping
-    and Niu, Yifeng
-    and Gu, Mancang
-    and Cheng, Jin",
+    and Sun, Shiliang"
     title="Enhancing Robustness of Lane Detection Through Dynamic Smoothness",
     booktitle="Proceedings of 2021 International Conference on Autonomous Unmanned Systems (ICAUS 2021)",
     year="2022",
